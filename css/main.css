@@ -1,0 +1,119 @@
+body {
+	margin-top: 35px;
+	display: flex;
+}
+.main {
+	width: 900px;
+	height: 900px;
+	background: transparent;
+	margin-left: 100px;
+	margin-right: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.menu {
+	width: 500px;
+	margin-left: 150px;
+	font-family: 'Roboto', sans-serif;
+}
+.sector {
+	width: 450px;
+	height: 450px;	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.canvas-container {
+	position: absolute !important;
+}
+
+.sector--left-auth {
+	background: #f8bbba;
+	border-bottom: 1px solid #333;
+	border-right: 1px solid #333;
+}
+
+.sector--right-auth {
+	background: #92d9f7;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+}
+.sector--left-lib {
+	background: #c8e4bc;
+	border-top: 1px solid #333;
+	border-right: 1px solid #333;
+}
+.sector--right-lib {
+	background: #dfc5de;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+}
+
+.hint {
+	position: absolute;
+	font-style: normal;
+	font-family: 'Roboto', sans-serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	color: #222;
+}
+
+.hint-left {
+	margin-left: -70px;
+	margin-top: 435px;
+}
+
+.hint-auth {
+	margin-top: -30px;
+	left: 50%;
+	margin-left: -100px;
+}
+.hint-right {
+	right: 0;
+	margin-right: -82px;
+	margin-top: 435px;
+}
+
+.hint-lib {
+	bottom: 0;
+	margin-bottom: -30px;
+	left: 50%;
+	margin-left: -80px;
+}
+#file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+#file + label {
+	padding: 10px;
+	padding-left: 35px;
+	padding-right: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    background: url('../img/upload.png'), url('../img/button-bg.jpg');
+    background-position: 3% center, 50% 50%;
+    background-repeat: no-repeat, no-repeat;
+    display: inline-block;
+    border: 1px solid #000;
+    text-shadow: 1px 0 5px #000;
+}
+
+#file:focus + label,
+#file + label:hover {
+    box-shadow: 0px 0px 5px #000;
+}
+#file + label {
+	cursor: pointer;
+}
+#file:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
