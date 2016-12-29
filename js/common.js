@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	canvas.moveTo(hintLeft, 201);
 	canvas.moveTo(hintLib, 202);
 	canvas.moveTo(hintAuth, 203);
-	canvas.moveTo(lineVertical, 204);
-	canvas.moveTo(lineHorizontal, 205);
+	canvas.moveTo(lineVertical, 5);
+	canvas.moveTo(lineHorizontal, 6);
 	document.getElementById('file').addEventListener("change", function (e) {
 	  var file = e.target.files[0];
 	  var reader = new FileReader();
