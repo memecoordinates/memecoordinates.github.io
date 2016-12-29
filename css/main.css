@@ -82,7 +82,11 @@ body {
 	left: 50%;
 	margin-left: -80px;
 }
+.buttons {
+	width: 100%;
+}
 #file {
+	display: inline-block;
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -91,6 +95,8 @@ body {
 	z-index: -1;
 }
 #file + label {
+	float: left;
+	display: inline-block;
 	padding: 10px;
 	padding-left: 35px;
 	padding-right: 10px;
@@ -112,8 +118,54 @@ body {
 #file + label {
 	cursor: pointer;
 }
-#file:focus + label {
-	outline: 1px dotted #000;
-	outline: -webkit-focus-ring-color auto 5px;
+
+.export {
+	float: right;
+	display: inline-block;
+	padding: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background: url('../img/spekr-button.jpg');
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    display: inline-block;
+    background-size: 100%;
+    border: 1px solid #000;
+    text-shadow: 1px 0 5px #440000;
+    min-height: 41px;
+    margin-left: 5px;
 }
 
+.export:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 5px #000;
+}
+.buttons::after {
+	display: block;
+	content: ' ';
+	clear: both;
+}
+
+.donate {
+	margin-top: 10px;
+}
+.ads {
+	margin-top: 10px;	
+	height: 200px;
+	width: 100%;
+}
+.copyright {
+	font-size: 0.66em;
+	height: 30px;
+	width: 100%;	
+	background-color: #fefefe;
+}
+.copyright a {
+	color: #dfc5de;
+}
+.copyright a:hover {
+	color: #efb5ce;
+}
