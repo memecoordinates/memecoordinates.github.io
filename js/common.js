@@ -216,7 +216,7 @@ let hintLib = new fabric.Text("Libertarian", { hoverCursor: _hoverCursor, select
 		});
 		setTimeout(openImageInNewTab, 30);
 		function openImageInNewTab() {
-			window.open(canvas2.toDataURL('png'));
+			window.open(canvas2.toDataURL('png'), "_blank");
 		}
 		
 	}
