@@ -3,7 +3,8 @@ body {
 	margin-left: 3px;	
 }
 .main {
-	min-height: 960px;
+	width: 960px;
+	height: 960px;
 	background: transparent;
 	margin-left: 35px;
 	margin-right: 0;
@@ -59,7 +60,15 @@ body {
 #file + label {
 	cursor: pointer;
 }
-
+.canvas-container:nth-child(1) {
+	z-index: 1;
+}
+.canvas-container:nth-child(2) {
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-top: 30px;
+	z-index: 99;
+}
 .export {
 	float: right;
 	display: inline-block;
